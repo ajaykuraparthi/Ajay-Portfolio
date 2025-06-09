@@ -2,6 +2,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import { useNavigate } from 'react-router-dom';
+import photo10Img from './assets/photo10.jpg';
+import photo11Img from './assets/photo11.jpg';
+import photo12mg from './assets/photo12.jpg';
+import photo13Img from './assets/photo13.jpg';
+import photo14Img from './assets/photo14.jpg';
+import photo15Img from './assets/photo15.jpg';
+import photo16Img from './assets/photo16.jpg';
+import photo17img from './assets/photo17.jpg';
 
 export default function Projects() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +30,9 @@ export default function Projects() {
   const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const screenshots = [
-    'https://readdy.ai/api/search-image?query=modern%20mobile%20app%20interface%20showing%20fee%20management%20dashboard%20with%20payment%20statistics%20and%20charts%2C%20dark%20theme%20with%20blue%20accents%2C%20professional%20UI%20design&width=800&height=600&seq=app1&orientation=landscape',
-    'https://readdy.ai/api/search-image?query=mobile%20app%20attendance%20tracking%20interface%20with%20QR%20scanner%20and%20location%20map%2C%20dark%20theme%20with%20blue%20elements%2C%20professional%20UI&width=800&height=600&seq=app3&orientation=landscape',
-    'https://readdy.ai/api/search-image?query=mobile%20app%20analytics%20dashboard%20with%20financial%20reports%20and%20charts%2C%20dark%20theme%20with%20blue%20data%20visualization%2C%20modern%20interface&width=800&height=600&seq=app4&orientation=landscape'
+    photo10Img,
+    photo11Img,
+    photo12mg
   ];
 
   useEffect(() => {
@@ -202,7 +210,7 @@ export default function Projects() {
 
       {/* Projects Section */}
       <section id="projects" className="py-20 relative bg-[#0A0A0A]">
-        <div className="absolute inset-0 bg-[url('https://readdy.ai/api/search-image?query=abstract%20digital%20grid%20pattern%20with%20blue%20neon%20lights%20on%20dark%20background%2C%20futuristic%20technology%20concept%2C%20minimalist%20tech%20design%20with%20depth%20and%20perspective%2C%20cyberpunk%20aesthetic&width=1440&height=800&seq=bg2&orientation=landscape')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${photo13Img})`, backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.1 }}></div>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00A6FF] to-[#0066FF]">
@@ -216,7 +224,7 @@ export default function Projects() {
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A6FF]/20 to-[#0066FF]/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img
-                    src="https://readdy.ai/api/search-image?query=modern%20Android%20app%20interface%20for%20fee%20management%20system%20called%20Feesavy%2C%20showing%20dashboard%20with%20financial%20tracking%20features%2C%20clean%20UI%20with%20blue%20accent%20colors%2C%20mobile%20app%20mockup%20on%20dark%20background%2C%20professional%20software%20visualization&width=600&height=400&seq=project1&orientation=landscape"
+                    src={photo14Img}
                     alt="Feesavy Project"
                     className="w-full h-auto rounded-xl shadow-lg object-cover"
                   />
@@ -333,7 +341,7 @@ export default function Projects() {
                         </div>
                       )}
                       <a
-                        href="https://github.com/ajay8179"
+                        href="https://github.com/ajaykuraparthi/Feesavy"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-[#121212]/80 flex items-center justify-center border border-[#00A6FF] shadow-[0_0_15px_rgba(0,166,255,0.5)] cursor-pointer !rounded-button whitespace-nowrap"
@@ -385,7 +393,7 @@ export default function Projects() {
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A6FF]/20 to-[#0066FF]/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img 
-                    src="https://readdy.ai/api/search-image?query=modern%20chat%20application%20interface%20showing%20real-time%20messaging%20features%2C%20dark%20theme%20with%20blue%20accents%2C%20clean%20UI%20design%20with%20message%20bubbles%20and%20user%20avatars%2C%20professional%20web%20app%20visualization&width=600&height=400&seq=chat1&orientation=landscape" 
+                    src={photo15Img} 
                     alt="MERN Chat App" 
                     className="w-full h-auto rounded-xl shadow-lg object-cover"
                   />
@@ -398,7 +406,7 @@ export default function Projects() {
                         <i className="fas fa-eye text-[#00A6FF]"></i>
                       </a>
                       <a 
-                        href="https://github.com/ajay8179" 
+                        href="https://github.com/ajaykuraparthi" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="w-12 h-12 rounded-full bg-[#121212]/80 flex items-center justify-center border border-[#00A6FF] shadow-[0_0_15px_rgba(0,166,255,0.5)] cursor-pointer !rounded-button whitespace-nowrap"
@@ -450,7 +458,7 @@ export default function Projects() {
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A6FF]/20 to-[#0066FF]/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img 
-                    src="https://readdy.ai/api/search-image?query=futuristic%20AI%20chatbot%20interface%20with%20holographic%20elements%2C%20showing%20conversation%20flow%20with%20natural%20language%20processing%2C%20dark%20theme%20with%20blue%20accent%20colors%2C%20high-tech%20visualization&width=600&height=400&seq=chatbot1&orientation=landscape" 
+                    src={photo16Img}
                     alt="AI Chat Bot" 
                     className="w-full h-auto rounded-xl shadow-lg object-cover"
                   />
@@ -515,7 +523,7 @@ export default function Projects() {
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A6FF]/20 to-[#0066FF]/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <img 
-                    src="https://readdy.ai/api/search-image?query=advanced%20AI%20agent%20system%20interface%20showing%20multiple%20autonomous%20agents%20working%20together%2C%20neural%20network%20visualization%2C%20futuristic%20dashboard%20with%20data%20flows%2C%20dark%20theme%20with%20blue%20highlights&width=600&height=400&seq=agents1&orientation=landscape" 
+                    src={photo17img} 
                     alt="AI Agents" 
                     className="w-full h-auto rounded-xl shadow-lg object-cover"
                   />
@@ -528,7 +536,7 @@ export default function Projects() {
                         <i className="fas fa-eye text-[#00A6FF]"></i>
                       </a>
                       <a 
-                        href="https://github.com/ajay8179" 
+                        href="https://github.com/ajaykuraparthi" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="w-12 h-12 rounded-full bg-[#121212]/80 flex items-center justify-center border border-[#00A6FF] shadow-[0_0_15px_rgba(0,166,255,0.5)] cursor-pointer !rounded-button whitespace-nowrap"
