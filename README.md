@@ -1,7 +1,7 @@
 # 🚀 Ajay Kuraparthi's Portfolio
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&color=00FFFF&center=true&vCenter=true&width=600&lines=Welcome+to+my+Portfolio!;Fullstack+Developer;3D+Web+Creator;AI+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&color=00FFFF&center=true&vCenter=true&width=600&lines=Welcome+to+my+Portfolio!" alt="Typing SVG" />
 </div>
 
 ## 🌟 About Me
