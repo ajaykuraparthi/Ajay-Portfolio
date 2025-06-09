@@ -1,0 +1,29 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="#0A0A0A"/>
+  
+  <!-- Path for A -->
+  <path d="M20 75 L35 25 L50 75 M25 60 H45" stroke="#00A6FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Path for J -->
+  <path d="M65 25 L65 70 C65 75 60 75 55 75" stroke="#00A6FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <defs>
+    <filter id="neon-glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#00A6FF" flood-opacity="0.8" result="flood"/>
+      <feComposite in="flood" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g filter="url(#neon-glow)">
+    <!-- Path for A (duplicate for glow) -->
+    <path d="M20 75 L35 25 L50 75 M25 60 H45" stroke="#00A6FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Path for J (duplicate for glow) -->
+    <path d="M65 25 L65 70 C65 75 60 75 55 75" stroke="#00A6FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
